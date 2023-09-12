@@ -5,7 +5,7 @@ const listContainer = document.getElementById("list-container");
 
 function AddTask() {
   if (inputBox.value === "") {
-    alert("Type something...");
+    alert("Add Some Task to Process...");
   } 
   
   else {
@@ -32,7 +32,7 @@ listContainer.addEventListener('click', function(e){
     }
 }, false);
 
-
+// Store The Data In localStorage 
 function saveData(){
     localStorage.setItem('data', listContainer.innerHTML);
 
